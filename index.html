@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfeļa Lapa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mani Portfelis</h1>
+        <p>Es esmu students, kurš interesējas par programmēšanu un tehnoloģijām.</p>
+        <a href="https://github.com/jusu-repozitorijs" target="_blank">Manas projekti GitHub</a>
+    </header>
+    <section>
+        <h2>Saņemt Ziņas</h2>
+        <form id="contact-form">
+            <label for="email">E-pasts:</label>
+            <input type="email" id="email" required>
+            <label for="message">Ziņa:</label>
+            <textarea id="message" required></textarea
+            <label for="captcha">Lūdzu, ievadiet 2 + 3 = ?</label>
+            <input type="text" id="captcha" required>
+            <button type="submit">Nosūtīt</button>
+            <p id="response-message"></p>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
