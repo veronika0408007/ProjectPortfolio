@@ -3,33 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vampire Learns Macedonian</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Vampire Travels to Macedonia</h1>
-            <p>Help the vampire learn Macedonian by answering questions!</p>
-        </header>
+    <!-- Первый фрейм: Описание -->
+    <section class="frame frame-dark-green">
+        <div class="content">
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+            <h1>Обо мне</h1>
+            <p>Я программист, специализируюсь на ... (здесь можно добавить описание)</p>
+        </div>
+    </section>
 
-        <main>
-            <div class="quiz-container">
-                <img src="vampire.png" alt="Vampire Image" class="vampire-img">
-                <h2 id="question">Question will appear here</h2>
-                <div class="answers">
-                    <button class="answer" id="answer1">Answer 1</button>
-                    <button class="answer" id="answer2">Answer 2</button>
-                    <button class="answer" id="answer3">Answer 3</button>
-                    <button class="answer" id="answer4">Answer 4</button>
-                </div>
-            </div>
-        </main>
+    <!-- Второй фрейм: Портфолио -->
+    <section class="frame frame-white">
+        <div class="content">
+            <h1>Моё портфолио</h1>
+            <p>Вот одна из моих работ: <a href="https://github.com/your-repository" target="_blank">Посмотреть проект</a></p>
+        </div>
+    </section>
 
-        <footer>
-            <p>Created for the vampire's Macedonian language adventure!</p>
-        </footer>
-    </div>
+    <!-- Третий фрейм: Контакты -->
+    <section class="frame frame-dark-green">
+        <div class="content">
+            <h1>Свяжитесь со мной</h1>
+            <form id="contact-form" action="your-backend-url" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
