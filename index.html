@@ -3,32 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Veronika's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <!-- Первый фрейм: Описание -->
-    <section class="frame frame-dark-green">
-        <div class="content">
-            <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
-            <h1>Обо мне</h1>
-            <p>Я программист, специализируюсь на ... (здесь можно добавить описание)</p>
-        </div>
-    </section>
 
-    <!-- Второй фрейм: Портфолио -->
+    <!-- Первый фрейм: Приветствие -->
     <section class="frame frame-white">
         <div class="content">
-            <h1>Моё портфолио</h1>
-            <p>Вот одна из моих работ: <a href="https://github.com/your-repository" target="_blank">Посмотреть проект</a></p>
+            <h1>Привет, я Вероника, и я программист</h1>
         </div>
     </section>
 
-    <!-- Третий фрейм: Контакты -->
+    <!-- Второй фрейм: Описание -->
+    <section class="frame frame-dark-green">
+        <div class="content two-column">
+            <div class="text-side">
+                <h2>Обо мне</h2>
+                <p>Я специализируюсь на разработке веб-приложений... (добавь больше информации о себе)</p>
+            </div>
+            <div class="photo-side">
+                <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Третий фрейм: Портфолио -->
+    <section class="frame frame-white">
+        <div class="content two-column reverse">
+            <div class="photo-side">
+                <img src="project-image.jpg" alt="Project Image" class="project-photo">
+            </div>
+            <div class="text-side">
+                <h2>Моё портфолио</h2>
+                <p>Вот один из моих проектов: <a href="https://github.com/your-repository" target="_blank">Посмотреть проект</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Четвёртый фрейм: Контакты -->
     <section class="frame frame-dark-green">
         <div class="content">
-            <h1>Свяжитесь со мной</h1>
+            <h2>Свяжитесь со мной</h2>
             <form id="contact-form" action="your-backend-url" method="POST">
                 <label for="name">Имя:</label>
                 <input type="text" id="name" name="name" required>
