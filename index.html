@@ -9,6 +9,15 @@
 </head>
 <body>
 
+    <!-- Панель навигации -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
     <!-- Первый фрейм: Приветствие -->
     <section class="frame frame-white">
         <div class="content">
@@ -17,11 +26,11 @@
     </section>
 
     <!-- Второй фрейм: Описание -->
-    <section class="frame frame-dark-green">
-        <div class="content two-column">
+    <section id="about" class="frame frame-dark-green">
+        <div class="content split">
             <div class="text-side">
                 <h2>Обо мне</h2>
-                <p>Я специализируюсь на разработке веб-приложений... (добавь больше информации о себе)</p>
+                <p>Я специализируюсь на разработке веб-приложений и... (добавь больше информации о себе)</p>
             </div>
             <div class="photo-side">
                 <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
@@ -30,8 +39,8 @@
     </section>
 
     <!-- Третий фрейм: Портфолио -->
-    <section class="frame frame-white">
-        <div class="content two-column reverse">
+    <section id="portfolio" class="frame frame-white">
+        <div class="content split reverse">
             <div class="photo-side">
                 <img src="project-image.jpg" alt="Project Image" class="project-photo">
             </div>
@@ -43,7 +52,7 @@
     </section>
 
     <!-- Четвёртый фрейм: Контакты -->
-    <section class="frame frame-dark-green">
+    <section id="contact" class="frame frame-dark-green">
         <div class="content">
             <h2>Свяжитесь со мной</h2>
             <form id="contact-form" action="your-backend-url" method="POST">
