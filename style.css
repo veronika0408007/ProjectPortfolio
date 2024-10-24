@@ -8,31 +8,36 @@ body {
 
 /* Навигационная панель */
 .navbar {
-    background-color: #2e4d3e;
+    background-color: #2e4d3e; /* Тёмно-зелёный фон */
+    height: 50px; /* Узкий по высоте */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    gap: 30px;
     margin: 0;
     padding: 0;
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin: 0;
 }
 
 .navbar ul li a {
-    color: #ffffff;
+    color: #ffffff; /* Белый шрифт */
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 .navbar ul li a:hover {
